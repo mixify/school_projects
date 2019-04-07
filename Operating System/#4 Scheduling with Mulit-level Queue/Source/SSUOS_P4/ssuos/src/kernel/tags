@@ -1,0 +1,831 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AFLAGS	Makefile	/^AFLAGS = -f elf32$/;"	m
+ARENA_MAGIC	mem/malloc.c	46;"	d	file:
+ASSERT	arch/interrupt.c	31;"	d	file:
+ASSERT	bitmap.c	12;"	d	file:
+ASSERT	include/debug.h	18;"	d
+ASSERT	include/debug.h	22;"	d
+ASSERT	include/debug.h	28;"	d
+ASSERT	list.c	4;"	d	file:
+ASSERT	synch.c	7;"	d	file:
+AUTHOR	arch/Main.c	/^const char* AUTHOR = "OSLAB";$/;"	v
+AUTHOR	build/Main.s	/^AUTHOR:$/;"	l
+Address	arch/interrupt.c	/^	unsigned long Address;$/;"	m	struct:_IDTR	file:
+BITMAP_ERROR	include/bitmap.h	26;"	d
+BITMASK	include/vaddr.h	15;"	d
+BLOCK_CNT	include/device/block.h	/^    BLOCK_CNT                    \/* Number of Pintos block types. *\/$/;"	e	enum:block_type
+BLOCK_FILESYS	include/device/block.h	/^    BLOCK_FILESYS,               \/* File system. *\/$/;"	e	enum:block_type
+BLOCK_FOREIGN	include/device/block.h	/^    BLOCK_FOREIGN,               \/* Owned by non-Pintos operating system. *\/$/;"	e	enum:block_type
+BLOCK_KERNEL	include/device/block.h	/^    BLOCK_KERNEL,                \/* Pintos OS kernel. *\/$/;"	e	enum:block_type
+BLOCK_RAW	include/device/block.h	/^    BLOCK_RAW = BLOCK_ROLE_CNT,  \/* "Raw" device with unidentified contents. *\/$/;"	e	enum:block_type
+BLOCK_ROLE_CNT	include/device/block.h	/^    BLOCK_ROLE_CNT,$/;"	e	enum:block_type
+BLOCK_SCRATCH	include/device/block.h	/^    BLOCK_SCRATCH,               \/* Scratch. *\/$/;"	e	enum:block_type
+BLOCK_SECTOR_SIZE	include/device/block.h	11;"	d
+BLOCK_SWAP	include/device/block.h	/^    BLOCK_SWAP,                  \/* Swap. *\/$/;"	e	enum:block_type
+BOOL	include/type.h	/^typedef char BOOL;$/;"	t
+BUFSIZ	include/ssulib.h	7;"	d
+BUILD_COMMAND	Makefile	/^BUILD_COMMAND = -o $(BUILD_PATH)\/$@$/;"	m
+BUILD_PATH	Makefile	/^BUILD_PATH = .\/build$/;"	m
+BYTE	include/type.h	/^typedef unsigned char BYTE;$/;"	t
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -O0 -g -I.\/include -ffreestanding -m32 -nostdlib -nostdinc -static -fno-stack-protector$/;"	m
+CHAR	include/device/console.h	/^} CHAR;$/;"	t	typeref:struct:kChStruct
+CHAR_BIT	include/limits.h	4;"	d
+CHAR_MAX	include/limits.h	12;"	d
+CHAR_MAX	include/limits.h	15;"	d
+CHAR_MIN	include/limits.h	11;"	d
+CHAR_MIN	include/limits.h	14;"	d
+CODE_SEGMENT	include/interrupt.h	11;"	d
+COMMON_COMMAND	Makefile	/^COMMON_COMMAND = $(BUILD_COMMAND) -c $^ $(CFLAGS)$/;"	m
+CR0_FLAG_PE	include/mem/paging.h	8;"	d
+CR0_FLAG_PG	include/mem/paging.h	7;"	d
+CapslockFlag	include/device/kbd.h	/^	BOOL CapslockFlag;$/;"	m	struct:Key_Status_Struct
+CodeSelector	arch/interrupt.c	/^	unsigned short CodeSelector;$/;"	m	struct:_ID	file:
+ConvertScancodeToASCII	device/kbd.c	/^BOOL ConvertScancodeToASCII(BYTE Scancode, BYTE *Asciicode)$/;"	f
+DEVICES_BLOCK_H	include/device/block.h	2;"	d
+DEVICES_PARTITION_H	include/device/partition.h	2;"	d
+DIR	Makefile	/^DIR := ${CURDIR}$/;"	m
+DIV_ROUND_UP	include/round.h	6;"	d
+ELEM_BITS	bitmap.c	26;"	d	file:
+ENTRY	Makefile	/^ENTRY = ssuos_main$/;"	m
+ExtentedFlag	include/device/kbd.h	/^	BOOL ExtentedFlag;$/;"	m	struct:Key_Status_Struct
+FALSE	include/type.h	13;"	d
+FIRST_SPORT	device/console.c	17;"	d	file:
+FLAG_IF	arch/interrupt.c	128;"	d	file:
+FLAG_MBS	arch/interrupt.c	127;"	d	file:
+Glob_x	include/device/console.h	/^int Glob_x;$/;"	v
+Glob_y	include/device/console.h	/^int Glob_y;$/;"	v
+HLT	include/interrupt.h	4;"	d
+HSCREEN	device/console.c	9;"	d	file:
+HighOffset	arch/interrupt.c	/^	unsigned short HighOffset;$/;"	m	struct:_ID	file:
+INT16_MAX	include/stdint.h	9;"	d
+INT16_MAX	include/type.h	34;"	d
+INT16_MIN	include/stdint.h	10;"	d
+INT16_MIN	include/type.h	35;"	d
+INT32_MAX	include/stdint.h	13;"	d
+INT32_MAX	include/type.h	38;"	d
+INT32_MIN	include/stdint.h	14;"	d
+INT32_MIN	include/type.h	39;"	d
+INT64_MAX	include/stdint.h	17;"	d
+INT64_MAX	include/type.h	42;"	d
+INT64_MIN	include/stdint.h	18;"	d
+INT64_MIN	include/type.h	43;"	d
+INT8_MAX	include/stdint.h	5;"	d
+INT8_MAX	include/type.h	30;"	d
+INT8_MIN	include/stdint.h	6;"	d
+INT8_MIN	include/type.h	31;"	d
+INTMAX_MAX	include/stdint.h	41;"	d
+INTMAX_MAX	include/type.h	66;"	d
+INTMAX_MIN	include/stdint.h	40;"	d
+INTMAX_MIN	include/type.h	65;"	d
+INTPTR_MAX	include/stdint.h	34;"	d
+INTPTR_MAX	include/type.h	59;"	d
+INTPTR_MIN	include/stdint.h	33;"	d
+INTPTR_MIN	include/type.h	58;"	d
+INTR_MAX	include/interrupt.h	8;"	d
+INTR_MAX	include/intr-stubs.h	4;"	d
+INTR_OFF	include/interrupt.h	/^	INTR_OFF,$/;"	e	enum:intr_level
+INTR_ON	include/interrupt.h	/^	INTR_ON $/;"	e	enum:intr_level
+INT_MAX	include/limits.h	22;"	d
+INT_MIN	include/limits.h	23;"	d
+IO_BASE	device/console.c	16;"	d	file:
+KBDMAPSIZE	include/device/kbd.h	7;"	d
+KERNEL_ADDR	include/mem/paging.h	34;"	d
+KERNEL_HEAP	include/mem/paging.h	35;"	d
+KEY_BSPACE	include/device/kbd.h	27;"	d
+KEY_CAPS	include/device/kbd.h	14;"	d
+KEY_ESC	include/device/kbd.h	9;"	d
+KEY_F1	include/device/kbd.h	15;"	d
+KEY_F10	include/device/kbd.h	24;"	d
+KEY_F11	include/device/kbd.h	25;"	d
+KEY_F12	include/device/kbd.h	26;"	d
+KEY_F2	include/device/kbd.h	16;"	d
+KEY_F3	include/device/kbd.h	17;"	d
+KEY_F4	include/device/kbd.h	18;"	d
+KEY_F5	include/device/kbd.h	19;"	d
+KEY_F6	include/device/kbd.h	20;"	d
+KEY_F7	include/device/kbd.h	21;"	d
+KEY_F8	include/device/kbd.h	22;"	d
+KEY_F9	include/device/kbd.h	23;"	d
+KEY_LALT	include/device/kbd.h	12;"	d
+KEY_PRTSCN	include/device/kbd.h	11;"	d
+KEY_RSHIFT	include/device/kbd.h	10;"	d
+KEY_SPACE	include/device/kbd.h	13;"	d
+KEY_TAB	include/device/kbd.h	28;"	d
+KStat	device/kbd.c	/^static Key_Status KStat;$/;"	v	file:
+Kbd_Map	device/kbd.c	/^static BYTE Kbd_Map[4][KBDMAPSIZE] = {$/;"	v	file:
+Key_Status	include/device/kbd.h	/^} Key_Status;$/;"	t	typeref:struct:Key_Status_Struct
+Key_Status_Struct	include/device/kbd.h	/^typedef struct Key_Status_Struct {$/;"	s
+LEFT	vsprintk.c	7;"	d	file:
+LINE_STATUS	device/console.c	18;"	d	file:
+LIST_INITIALIZER	include/list.h	121;"	d
+LLONG_MAX	include/limits.h	30;"	d
+LLONG_MIN	include/limits.h	31;"	d
+LOADER_ARGS	include/loader.h	13;"	d
+LOADER_ARGS_LEN	include/loader.h	18;"	d
+LOADER_ARG_CNT	include/loader.h	14;"	d
+LOADER_ARG_CNT_LEN	include/loader.h	19;"	d
+LOADER_BASE	include/loader.h	4;"	d
+LOADER_END	include/loader.h	5;"	d
+LOADER_KERN_BASE	include/loader.h	7;"	d
+LOADER_PARTS	include/loader.h	12;"	d
+LOADER_PARTS_LEN	include/loader.h	17;"	d
+LOADER_PHYS_BASE	include/loader.h	9;"	d
+LOADER_SIG	include/loader.h	11;"	d
+LOADER_SIG_LEN	include/loader.h	16;"	d
+LONG_MAX	include/limits.h	26;"	d
+LONG_MIN	include/limits.h	27;"	d
+LV0_TIMER	include/proc/sched.h	10;"	d
+LV1_TIMER	include/proc/sched.h	11;"	d
+LowOffset	arch/interrupt.c	/^	unsigned short LowOffset;$/;"	m	struct:_ID	file:
+MEM_SIZE	mem/mm.c	/^static unsigned long MEM_SIZE;$/;"	v	file:
+MODIFIER	arch/Main.c	/^const char* MODIFIER = "You";$/;"	v
+MODIFIER	build/Main.s	/^MODIFIER:$/;"	l
+NASM	Makefile	/^NASM = nasm$/;"	m
+NOT_REACHED	include/debug.h	19;"	d
+NOT_REACHED	include/debug.h	26;"	d
+NOT_REACHED	include/debug.h	29;"	d
+NO_INLINE	include/debug.h	6;"	d
+NO_RETURN	include/debug.h	5;"	d
+NSCROLL	device/console.c	12;"	d	file:
+NULL	include/type.h	16;"	d
+NumlockFLag	include/device/kbd.h	/^	BOOL NumlockFLag;$/;"	m	struct:Key_Status_Struct
+OBJS	Makefile	/^OBJS = $(BUILD_PATH)\/Main.o $(BUILD_PATH)\/io.o $(BUILD_PATH)\/pit.o $(BUILD_PATH)\/interrupt.o $(BUILD_PATH)\/kbd.o $(BUILD_PATH)\/crset.o $(BUILD_PATH)\/paging.o \\$/;"	m
+PACKED	include/packed.h	4;"	d
+PAGE_ADDR_AVAIL	include/mem/paging.h	21;"	d
+PAGE_ADDR_BASE	include/mem/paging.h	22;"	d
+PAGE_DIR_SIZE	include/mem/paging.h	32;"	d
+PAGE_FLAG_ACCESS	include/mem/paging.h	15;"	d
+PAGE_FLAG_AVAIL	include/mem/paging.h	16;"	d
+PAGE_FLAG_CACHE	include/mem/paging.h	14;"	d
+PAGE_FLAG_DIRTY	include/mem/paging.h	17;"	d
+PAGE_FLAG_GLOB	include/mem/paging.h	20;"	d
+PAGE_FLAG_PRESENT	include/mem/paging.h	10;"	d
+PAGE_FLAG_PTA	include/mem/paging.h	19;"	d
+PAGE_FLAG_RW	include/mem/paging.h	11;"	d
+PAGE_FLAG_SIZE	include/mem/paging.h	18;"	d
+PAGE_FLAG_USER	include/mem/paging.h	12;"	d
+PAGE_FLAG_WRITE	include/mem/paging.h	13;"	d
+PAGE_MASK_BASE	include/mem/paging.h	24;"	d
+PAGE_MASK_PDE	include/mem/paging.h	25;"	d
+PAGE_MASK_PTE	include/mem/paging.h	26;"	d
+PAGE_OFFSET_PDE	include/mem/paging.h	27;"	d
+PAGE_OFFSET_PTE	include/mem/paging.h	28;"	d
+PAGE_SIZE	include/mem/paging.h	30;"	d
+PAGE_TBL_SIZE	include/mem/paging.h	31;"	d
+PANIC	include/debug.h	9;"	d
+PGBITS	include/vaddr.h	19;"	d
+PGMASK	include/vaddr.h	21;"	d
+PGSHIFT	include/vaddr.h	18;"	d
+PGSIZE	include/vaddr.h	20;"	d
+PHYS_BASE	include/vaddr.h	53;"	d
+PID0_PAGE_DIR	mem/paging.c	/^uint32_t *PID0_PAGE_DIR;$/;"	v
+PIT_BCD	include/device/pit.h	27;"	d
+PIT_BINARY	include/device/pit.h	26;"	d
+PIT_CHANNEL0	include/device/pit.h	4;"	d
+PIT_CHANNEL1	include/device/pit.h	5;"	d
+PIT_CHANNEL2	include/device/pit.h	6;"	d
+PIT_COMMAND	include/device/pit.h	7;"	d
+PIT_COUNTER0	include/device/pit.h	9;"	d
+PIT_COUNTER1	include/device/pit.h	10;"	d
+PIT_COUNTER2	include/device/pit.h	11;"	d
+PIT_FRQ_HZ	include/device/pit.h	30;"	d
+PIT_HZ	include/device/pit.h	29;"	d
+PIT_MODE0	include/device/pit.h	19;"	d
+PIT_MODE1	include/device/pit.h	20;"	d
+PIT_MODE2	include/device/pit.h	21;"	d
+PIT_MODE3	include/device/pit.h	22;"	d
+PIT_MODE4	include/device/pit.h	23;"	d
+PIT_MODE5	include/device/pit.h	24;"	d
+PIT_READBACK	include/device/pit.h	12;"	d
+PIT_RW_COUNTER_LATCH	include/device/pit.h	14;"	d
+PIT_RW_LBYTE	include/device/pit.h	15;"	d
+PIT_RW_LMBYTE	include/device/pit.h	17;"	d
+PIT_RW_MBYTE	include/device/pit.h	16;"	d
+PLUS	vsprintk.c	5;"	d	file:
+PRDSNu	include/device/block.h	19;"	d
+PRINTF_FORMAT	include/debug.h	7;"	d
+PRIX16	include/inttypes.h	18;"	d
+PRIX32	include/inttypes.h	25;"	d
+PRIX64	include/inttypes.h	32;"	d
+PRIX8	include/inttypes.h	11;"	d
+PRIXMAX	include/inttypes.h	39;"	d
+PRIXPTR	include/inttypes.h	46;"	d
+PRId16	include/inttypes.h	13;"	d
+PRId32	include/inttypes.h	20;"	d
+PRId64	include/inttypes.h	27;"	d
+PRId8	include/inttypes.h	6;"	d
+PRIdMAX	include/inttypes.h	34;"	d
+PRIdPTR	include/inttypes.h	41;"	d
+PRIi16	include/inttypes.h	14;"	d
+PRIi32	include/inttypes.h	21;"	d
+PRIi64	include/inttypes.h	28;"	d
+PRIi8	include/inttypes.h	7;"	d
+PRIiMAX	include/inttypes.h	35;"	d
+PRIiPTR	include/inttypes.h	42;"	d
+PRIo16	include/inttypes.h	15;"	d
+PRIo32	include/inttypes.h	22;"	d
+PRIo64	include/inttypes.h	29;"	d
+PRIo8	include/inttypes.h	8;"	d
+PRIoMAX	include/inttypes.h	36;"	d
+PRIoPTR	include/inttypes.h	43;"	d
+PRIu16	include/inttypes.h	16;"	d
+PRIu32	include/inttypes.h	23;"	d
+PRIu64	include/inttypes.h	30;"	d
+PRIu8	include/inttypes.h	9;"	d
+PRIuMAX	include/inttypes.h	37;"	d
+PRIuPTR	include/inttypes.h	44;"	d
+PRIx16	include/inttypes.h	17;"	d
+PRIx32	include/inttypes.h	24;"	d
+PRIx64	include/inttypes.h	31;"	d
+PRIx8	include/inttypes.h	10;"	d
+PRIxMAX	include/inttypes.h	38;"	d
+PRIxPTR	include/inttypes.h	45;"	d
+PROC_BLOCK	include/proc/proc.h	/^	PROC_BLOCK,$/;"	e	enum:p_state
+PROC_NUM_MAX	include/proc/proc.h	6;"	d
+PROC_RUN	include/proc/proc.h	/^	PROC_RUN,	$/;"	e	enum:p_state
+PROC_STOP	include/proc/proc.h	/^	PROC_STOP,$/;"	e	enum:p_state
+PROC_UNUSED	include/proc/proc.h	/^	PROC_UNUSED,$/;"	e	enum:p_state
+PROC_ZOMBIE	include/proc/proc.h	/^	PROC_ZOMBIE,$/;"	e	enum:p_state
+PTRDIFF_MAX	include/stdint.h	47;"	d
+PTRDIFF_MAX	include/type.h	72;"	d
+PTRDIFF_MIN	include/stdint.h	46;"	d
+PTRDIFF_MIN	include/type.h	71;"	d
+PauseFlag	include/device/kbd.h	/^	int PauseFlag;$/;"	m	struct:Key_Status_Struct
+PrintChar	device/console.c	/^void PrintChar(int x, int y, const char String) $/;"	f
+PrintCharToScreen	device/console.c	/^void PrintCharToScreen(int x, int y, const char *pString) $/;"	f
+QUE_LV_MAX	include/proc/sched.h	9;"	d
+REAL	arch/i386/intr-stubs.S	/^#define REAL                                    \\$/;"	d
+REFRESH_FPS	include/interrupt.h	10;"	d
+REGSYS	arch/syscall.c	68;"	d	file:
+ROUND_DOWN	include/round.h	8;"	d
+ROUND_UP	include/round.h	4;"	d
+SCHAR_MAX	include/limits.h	6;"	d
+SCHAR_MIN	include/limits.h	7;"	d
+SCROLL_END	device/console.c	23;"	d	file:
+SEL_KCSEG	include/loader.h	22;"	d
+SEL_KDSEG	include/loader.h	23;"	d
+SEL_NULL	include/loader.h	21;"	d
+SERIAL_STDOUT	include/device/console.h	17;"	d
+SHRT_MAX	include/limits.h	18;"	d
+SHRT_MIN	include/limits.h	19;"	d
+SIGN	vsprintk.c	4;"	d	file:
+SIZE_MAX	include/stdint.h	49;"	d
+SIZE_MAX	include/type.h	74;"	d
+SIZE_SCREEN	device/console.c	11;"	d	file:
+SIZE_SCROLL	device/console.c	13;"	d	file:
+SMALL	vsprintk.c	9;"	d	file:
+SPACE	vsprintk.c	6;"	d	file:
+SPECIAL	vsprintk.c	8;"	d	file:
+STACK_SIZE	proc/proc.c	13;"	d	file:
+STUB	arch/i386/intr-stubs.S	/^#define STUB(NUMBER, TYPE)                      \\$/;"	d
+SYSCALL_ARG_MAX	arch/interrupt.c	202;"	d	file:
+SYS_EXIT	include/syscall.h	/^	SYS_EXIT,$/;"	e	enum:SYS_LIST
+SYS_FORK	include/syscall.h	/^	SYS_FORK = 0,$/;"	e	enum:SYS_LIST
+SYS_LIST	include/syscall.h	/^enum SYS_LIST {$/;"	g
+SYS_NUM	include/syscall.h	/^	SYS_NUM,$/;"	e	enum:SYS_LIST
+SYS_SHUTDOWN	include/syscall.h	/^	SYS_SHUTDOWN,$/;"	e	enum:SYS_LIST
+SYS_SSUREAD	include/syscall.h	/^	SYS_SSUREAD,$/;"	e	enum:SYS_LIST
+SYS_WAIT	include/syscall.h	/^	SYS_WAIT,$/;"	e	enum:SYS_LIST
+ScrolllockFlag	include/device/kbd.h	/^	BOOL ScrolllockFlag;$/;"	m	struct:Key_Status_Struct
+ShiftFlag	include/device/kbd.h	/^	BOOL ShiftFlag; 	$/;"	m	struct:Key_Status_Struct
+Size	arch/interrupt.c	/^	unsigned short Size;$/;"	m	struct:_IDTR	file:
+THREADS_LOADER_H	include/loader.h	2;"	d
+THREADS_VADDR_H	include/vaddr.h	2;"	d
+THR_EMPTY	device/console.c	19;"	d	file:
+TIMER_MAX	include/interrupt.h	9;"	d
+TRUE	include/type.h	12;"	d
+Type	arch/interrupt.c	/^	unsigned short Type;$/;"	m	struct:_ID	file:
+UCHAR_MAX	include/limits.h	8;"	d
+UINT16_MAX	include/stdint.h	24;"	d
+UINT16_MAX	include/type.h	49;"	d
+UINT32_MAX	include/stdint.h	27;"	d
+UINT32_MAX	include/type.h	52;"	d
+UINT64_MAX	include/stdint.h	30;"	d
+UINT64_MAX	include/type.h	55;"	d
+UINT8_MAX	include/stdint.h	21;"	d
+UINT8_MAX	include/type.h	46;"	d
+UINTMAX_MAX	include/stdint.h	44;"	d
+UINTMAX_MAX	include/type.h	69;"	d
+UINTPTR_MAX	include/stdint.h	37;"	d
+UINTPTR_MAX	include/type.h	62;"	d
+UINT_MAX	include/limits.h	24;"	d
+ULLONG_MAX	include/limits.h	32;"	d
+ULONG_MAX	include/limits.h	28;"	d
+UNUSED	include/debug.h	4;"	d
+USHRT_MAX	include/limits.h	20;"	d
+UpdateKeyStat	device/kbd.c	/^void UpdateKeyStat(BYTE Scancode)$/;"	f
+VERSION	arch/Main.c	/^const char* VERSION = "0.1.02";$/;"	v
+VERSION	build/Main.s	/^VERSION:$/;"	l
+VIDIO_MEMORY	device/console.c	14;"	d	file:
+VSCREEN	device/console.c	10;"	d	file:
+ZEROPAD	vsprintk.c	3;"	d	file:
+_ADDRESSOF	include/stdarg.h	6;"	d
+_ID	arch/interrupt.c	/^typedef struct _ID$/;"	s	file:
+_ID	arch/interrupt.c	/^} _ID;$/;"	t	typeref:struct:_ID	file:
+_IDTR	arch/interrupt.c	/^typedef struct _IDTR$/;"	s	file:
+_IDTR	arch/interrupt.c	/^} _IDTR;$/;"	t	typeref:struct:_IDTR	file:
+_INTR_STUBS_H_	include/intr-stubs.h	2;"	d
+_INTSIZEOF	include/stdarg.h	7;"	d
+_SWITCH_H_	include/proc/switch.h	2;"	d
+__BITMAP_H__	include/bitmap.h	2;"	d
+__CONSOLE_H__	include/device/console.h	2;"	d
+__DEVICE_H__	include/device/device.h	2;"	d
+__DO_SYSCALL_H__	include/do_syscall.h	2;"	d
+__INTERRUPT_H__	include/interrupt.h	2;"	d
+__IO_H__	include/device/io.h	2;"	d
+__KDB_H__	include/device/kbd.h	2;"	d
+__LIB_CTYPE_H	include/ctype.h	2;"	d
+__LIB_DEBUG_H	include/debug.h	2;"	d
+__LIB_INTTYPES_H	include/inttypes.h	2;"	d
+__LIB_PACKED_H	include/packed.h	2;"	d
+__LIB_ROUND_H	include/round.h	2;"	d
+__LIB_STDBOOL_H	include/stdbool.h	2;"	d
+__LIB_STDDEF_H	include/stddef.h	2;"	d
+__LIB_STDINT_H	include/stdint.h	2;"	d
+__LIB_STDLIB_H	include/stdlib.h	2;"	d
+__LIB_STRING_H	include/string.h	2;"	d
+__LIMITS_H__	include/limits.h	2;"	d
+__LIST_H__	include/list.h	2;"	d
+__MALLOC_H__	include/mem/malloc.h	2;"	d
+__MEM_H__	include/mem/mm.h	2;"	d
+__PAGING_H__	include/mem/paging.h	2;"	d
+__PALLOC_H__	include/mem/palloc.h	2;"	d
+__PIT_H__	include/device/pit.h	2;"	d
+__PROC_H__	include/proc/proc.h	2;"	d
+__SCHED_H__	include/proc/sched.h	2;"	d
+__SSULIB_H__	include/ssulib.h	2;"	d
+__STDARG_H__	include/stdarg.h	2;"	d
+__SYNCH_H__	include/synch.h	2;"	d
+__SYSCALL_H__	include/syscall.h	2;"	d
+__TYPE_H__	include/type.h	2;"	d
+__bool_true_false_are_defined	include/stdbool.h	7;"	d
+a_s	device/console.c	/^bool a_s = TRUE;$/;"	v
+all_blocks	device/block.c	/^static struct list all_blocks = LIST_INITIALIZER (all_blocks);$/;"	v	typeref:struct:list	file:
+arch	Makefile	/^arch = .\/arch$/;"	m
+archx86	Makefile	/^archx86 = .\/arch\/i386$/;"	m
+arena	mem/malloc.c	/^struct arena $/;"	s	file:
+arena_to_block	mem/malloc.c	/^arena_to_block (struct arena *a, size_t idx) $/;"	f	file:
+aux	device/block.c	/^    void *aux;                          \/* Extra data owned by driver. *\/$/;"	m	struct:block	file:
+bAtt	include/device/console.h	/^		unsigned char bAtt;$/;"	m	struct:kChStruct
+bCh	include/device/console.h	/^		unsigned char bCh;$/;"	m	struct:kChStruct
+barrier	include/synch.h	42;"	d
+base	mem/palloc.c	/^	uint32_t *base; $/;"	m	struct:pool	file:
+bit_cnt	bitmap.c	/^	size_t bit_cnt;     \/* Number of bits. *\/$/;"	m	struct:bitmap	file:
+bit_mask	bitmap.c	/^bit_mask (size_t bit_idx) $/;"	f	file:
+bitmap	bitmap.c	/^struct bitmap$/;"	s	file:
+bitmap_all	bitmap.c	/^bitmap_all (const struct bitmap *b, size_t start, size_t cnt) $/;"	f
+bitmap_any	bitmap.c	/^bitmap_any (const struct bitmap *b, size_t start, size_t cnt) $/;"	f
+bitmap_buf_size	bitmap.c	/^bitmap_buf_size (size_t bit_cnt) $/;"	f
+bitmap_contains	bitmap.c	/^bitmap_contains (const struct bitmap *b, size_t start, size_t cnt, bool value) $/;"	f
+bitmap_count	bitmap.c	/^bitmap_count (const struct bitmap *b, size_t start, size_t cnt, bool value) $/;"	f
+bitmap_create_in_buf	bitmap.c	/^bitmap_create_in_buf (size_t bit_cnt, void *block, size_t block_size)\/\/ UNUSED)$/;"	f
+bitmap_file_size	bitmap.c	/^bitmap_file_size (const struct bitmap *b) $/;"	f
+bitmap_flip	bitmap.c	/^bitmap_flip (struct bitmap *b, size_t bit_idx) $/;"	f
+bitmap_mark	bitmap.c	/^bitmap_mark (struct bitmap *b, size_t bit_idx) $/;"	f
+bitmap_none	bitmap.c	/^bitmap_none (const struct bitmap *b, size_t start, size_t cnt) $/;"	f
+bitmap_read	bitmap.c	/^bitmap_read (struct bitmap *b, struct file *file) $/;"	f
+bitmap_reset	bitmap.c	/^bitmap_reset (struct bitmap *b, size_t bit_idx) $/;"	f
+bitmap_scan	bitmap.c	/^bitmap_scan (const struct bitmap *b, size_t start, size_t cnt, bool value) $/;"	f
+bitmap_scan_and_flip	bitmap.c	/^bitmap_scan_and_flip (struct bitmap *b, size_t start, size_t cnt, bool value)$/;"	f
+bitmap_set	bitmap.c	/^bitmap_set (struct bitmap *b, size_t idx, bool value) $/;"	f
+bitmap_set_all	bitmap.c	/^bitmap_set_all (struct bitmap *b, bool value) $/;"	f
+bitmap_set_multiple	bitmap.c	/^bitmap_set_multiple (struct bitmap *b, size_t start, size_t cnt, bool value) $/;"	f
+bitmap_size	bitmap.c	/^bitmap_size (const struct bitmap *b)$/;"	f
+bitmap_test	bitmap.c	/^bitmap_test (const struct bitmap *b, size_t idx) $/;"	f
+bitmap_write	bitmap.c	/^bitmap_write (const struct bitmap *b, struct file *file)$/;"	f
+bits	bitmap.c	/^	elem_type *bits;    \/* Elements that represent bits. *\/$/;"	m	struct:bitmap	file:
+block	device/block.c	/^struct block$/;"	s	file:
+block	device/partition.c	/^    struct block *block;                \/* Underlying block device. *\/$/;"	m	struct:partition	typeref:struct:partition::block	file:
+block	mem/malloc.c	/^struct block $/;"	s	file:
+block_by_role	device/block.c	/^static struct block *block_by_role[BLOCK_ROLE_CNT];$/;"	v	typeref:struct:block	file:
+block_first	device/block.c	/^block_first (void)$/;"	f
+block_get_by_name	device/block.c	/^block_get_by_name (const char *name)$/;"	f
+block_get_role	device/block.c	/^block_get_role (enum block_type role)$/;"	f
+block_name	device/block.c	/^block_name (struct block *block)$/;"	f
+block_next	device/block.c	/^block_next (struct block *block)$/;"	f
+block_operations	include/device/block.h	/^struct block_operations$/;"	s
+block_print_stats	device/block.c	/^block_print_stats (void)$/;"	f
+block_read	device/block.c	/^block_read (struct block *block, block_sector_t sector, void *buffer)$/;"	f
+block_register	device/block.c	/^block_register (const char *name, enum block_type type,$/;"	f
+block_sector_t	include/device/block.h	/^typedef uint32_t block_sector_t;$/;"	t
+block_set_role	device/block.c	/^block_set_role (enum block_type role, struct block *block)$/;"	f
+block_size	device/block.c	/^block_size (struct block *block)$/;"	f
+block_size	mem/malloc.c	/^    size_t block_size;          \/* Size of each element in bytes. *\/$/;"	m	struct:desc	file:
+block_size	mem/malloc.c	/^block_size (void *block) $/;"	f	file:
+block_to_arena	mem/malloc.c	/^block_to_arena (struct block *b)$/;"	f	file:
+block_type	device/block.c	/^block_type (struct block *block)$/;"	f
+block_type	include/device/block.h	/^enum block_type$/;"	g
+block_type_name	device/block.c	/^block_type_name (enum block_type type)$/;"	f
+block_write	device/block.c	/^block_write (struct block *block, block_sector_t sector, const void *buffer)$/;"	f
+blocks_per_arena	mem/malloc.c	/^    size_t blocks_per_arena;    \/* Number of blocks in an arena. *\/$/;"	m	struct:desc	file:
+bool	include/type.h	/^typedef char bool;$/;"	t
+buf_e	device/console.c	22;"	d	file:
+buf_head	device/kbd.c	/^int buf_head, buf_tail;$/;"	v
+buf_p	device/console.c	/^char *buf_p;	$/;"	v
+buf_s	device/console.c	/^char buf_s[SIZE_SCROLL];$/;"	v
+buf_tail	device/kbd.c	/^int buf_head, buf_tail;$/;"	v
+buf_w	device/console.c	/^char *buf_w;	$/;"	v
+byte_cnt	bitmap.c	/^byte_cnt (size_t bit_cnt)$/;"	f	file:
+calloc	mem/malloc.c	/^calloc (size_t a, size_t b) $/;"	f
+check_sector	device/block.c	/^check_sector (struct block *block, block_sector_t sector)$/;"	f	file:
+child_pid	include/proc/proc.h	/^	int child_pid;$/;"	m	struct:process
+clrScreen	device/console.c	/^void clrScreen(void) $/;"	f
+condition	include/synch.h	/^struct condition $/;"	s
+cs	include/interrupt.h	/^	uint16_t cs, :16;$/;"	m	struct:intr_frame
+cur_process	proc/proc.c	/^struct process *cur_process;$/;"	v	typeref:struct:process
+default_handler	arch/interrupt.c	/^void default_handler(struct intr_frame *iframe)$/;"	f
+desc	mem/malloc.c	/^    struct desc *desc;          \/* Owning descriptor, null for big block. *\/$/;"	m	struct:arena	typeref:struct:arena::desc	file:
+desc	mem/malloc.c	/^struct desc$/;"	s	file:
+desc_cnt	mem/malloc.c	/^static size_t desc_cnt;         \/* Number of descriptors. *\/$/;"	v	file:
+descs	mem/malloc.c	/^static struct desc descs[10];   \/* Descriptors. *\/$/;"	v	typeref:struct:desc	file:
+detect_mem	mem/mm.c	/^void detect_mem()$/;"	f
+dev_shutdown	device/device.c	/^void dev_shutdown(void)$/;"	f
+device	Makefile	/^device = .\/device$/;"	m
+dlist	proc/proc.c	/^struct list dlist;				$/;"	v	typeref:struct:list
+do_div	vsprintk.c	13;"	d	file:
+do_exit	arch/do_syscall.c	/^void do_exit(int status)$/;"	f
+do_fork	arch/do_syscall.c	/^pid_t do_fork(proc_func func, void* aux)$/;"	f
+do_sched_on_return	arch/interrupt.c	/^void do_sched_on_return(void)$/;"	f
+do_shutdown	arch/do_syscall.c	/^void do_shutdown(void)$/;"	f
+do_ssuread	arch/do_syscall.c	/^int do_ssuread(void)$/;"	f
+do_wait	arch/do_syscall.c	/^pid_t do_wait(int *status)$/;"	f
+ds	include/interrupt.h	/^	uint16_t ds, :16;$/;"	m	struct:intr_frame
+eax	include/interrupt.h	/^	uint32_t eax; $/;"	m	struct:intr_frame
+ebp	include/interrupt.h	/^	uint32_t ebp; $/;"	m	struct:intr_frame
+ebx	include/interrupt.h	/^	uint32_t ebx; $/;"	m	struct:intr_frame
+ecx	include/interrupt.h	/^	uint32_t ecx; $/;"	m	struct:intr_frame
+edi	include/interrupt.h	/^	uint32_t edi; $/;"	m	struct:intr_frame
+edx	include/interrupt.h	/^	uint32_t edx; $/;"	m	struct:intr_frame
+eflags	include/interrupt.h	/^	uint32_t eflags;$/;"	m	struct:intr_frame
+eip	include/interrupt.h	/^	void (*eip) (void);$/;"	m	struct:intr_frame
+elem_all	include/proc/proc.h	/^	struct list_elem elem_all;	$/;"	m	struct:process	typeref:struct:process::list_elem
+elem_cnt	bitmap.c	/^elem_cnt (size_t bit_cnt)$/;"	f	file:
+elem_idx	bitmap.c	/^elem_idx (size_t bit_idx) $/;"	f	file:
+elem_stat	include/proc/proc.h	/^	struct list_elem elem_stat;	$/;"	m	struct:process	typeref:struct:process::list_elem
+elem_type	bitmap.c	/^typedef unsigned long elem_type;$/;"	t	file:
+error_code	include/interrupt.h	/^    uint32_t error_code; $/;"	m	struct:intr_frame
+es	include/interrupt.h	/^	uint16_t es, :16;$/;"	m	struct:intr_frame
+esi	include/interrupt.h	/^	uint32_t esi; $/;"	m	struct:intr_frame
+esp	include/interrupt.h	/^	void *esp; $/;"	m	struct:intr_frame
+esp_dummy	include/interrupt.h	/^	uint32_t esp_dummy; $/;"	m	struct:intr_frame
+exit	arch/syscall.c	/^void exit(int status)$/;"	f
+exit_status	include/proc/proc.h	/^	int exit_status;$/;"	m	struct:process
+false	include/stdbool.h	6;"	d
+false	include/type.h	22;"	d
+find_end_of_run	list.c	/^find_end_of_run (struct list_elem *a, struct list_elem *b,$/;"	f	file:
+fork	arch/syscall.c	/^pid_t fork(proc_func func, void* aux)$/;"	f
+found_partition	device/partition.c	/^found_partition (struct block *block, uint8_t part_type,$/;"	f	file:
+frame_pointer	include/interrupt.h	/^	void *frame_pointer;$/;"	m	struct:intr_frame
+free	mem/malloc.c	/^free (void *p) $/;"	f
+free_cnt	mem/malloc.c	/^    size_t free_cnt;            \/* Free blocks; pages in big block. *\/$/;"	m	struct:arena	file:
+free_elem	mem/malloc.c	/^    struct list_elem free_elem; \/* Free list element. *\/$/;"	m	struct:block	typeref:struct:block::list_elem	file:
+free_list	mem/malloc.c	/^    struct list free_list;      \/* List of free blocks. *\/$/;"	m	struct:desc	typeref:struct:desc::list	file:
+fs	include/interrupt.h	/^	uint16_t fs, :16;$/;"	m	struct:intr_frame
+getEIP	proc/proc.c	/^void* getEIP()$/;"	f
+getMemSize	arch/i386/mem.asm	/^getMemSize:		$/;"	l
+getToken	ssulib.c	/^int getToken(char* buf, int len)$/;"	f
+getValidPid	proc/proc.c	/^pid_t getValidPid(int *idx) {$/;"	f
+get_cur_pd	mem/paging.c	/^uint32_t* get_cur_pd()$/;"	f
+get_next_proc	proc/sched.c	/^struct process* get_next_proc(struct list *rlist_target) {$/;"	f
+get_ticks	arch/interrupt.c	/^unsigned long get_ticks(void)$/;"	f
+getchar	ssulib.c	/^char getchar()$/;"	f
+gs	include/interrupt.h	/^	uint16_t gs, :16;$/;"	m	struct:intr_frame
+handlers	arch/interrupt.c	/^intr_handler_func *handlers[INTR_MAX];$/;"	v
+head	include/list.h	/^    struct list_elem head;      \/* List head. *\/$/;"	m	struct:list	typeref:struct:list::list_elem
+hexDump	proc/proc.c	/^void hexDump (void *addr, int len) {$/;"	f
+holder	include/synch.h	/^      struct process *holder;      $/;"	m	struct:lock	typeref:struct:lock::process
+idle	include/proc/proc.h	/^proc_func idle;	$/;"	v
+idle	proc/proc.c	/^void idle(void* aux)$/;"	f
+idle_process	proc/proc.c	/^struct process *idle_process; $/;"	v	typeref:struct:process
+idt	arch/interrupt.c	/^_ID     *idt;$/;"	v
+in_external_intr	arch/interrupt.c	/^static bool in_external_intr;  $/;"	v	file:
+inb	arch/i386/io.asm	/^inb:$/;"	l
+init_console	device/console.c	/^void init_console(void)$/;"	f
+init_intr	arch/interrupt.c	/^int init_intr(void)$/;"	f
+init_kbd	device/kbd.c	/^void init_kbd(void)$/;"	f
+init_paging	mem/paging.c	/^void init_paging()$/;"	f
+init_palloc	mem/palloc.c	/^void init_palloc (void) $/;"	f
+init_pit	device/pit.c	/^void init_pit(void)  $/;"	f
+init_pool	mem/palloc.c	/^static void init_pool (struct pool *p, void *base, size_t page_cnt, const char *name) $/;"	f	file:
+init_proc	proc/proc.c	/^void init_proc()$/;"	f
+init_syscall	arch/syscall.c	/^void init_syscall(void)$/;"	f
+inl	arch/i386/io.asm	/^inl:$/;"	l
+inplace_merge	list.c	/^inplace_merge (struct list_elem *a0, struct list_elem *a1b0,$/;"	f	file:
+insw	include/device/io.h	/^insw (uint16_t port, void *addr, size_t cnt)$/;"	f
+int16_t	include/stdint.h	/^typedef signed short int int16_t;$/;"	t
+int16_t	include/type.h	/^typedef signed short int int16_t;$/;"	t
+int32_t	include/stdint.h	/^typedef signed int int32_t;$/;"	t
+int32_t	include/type.h	/^typedef signed int int32_t;$/;"	t
+int64_t	include/stdint.h	/^typedef signed long long int int64_t;$/;"	t
+int64_t	include/type.h	/^typedef signed long long int int64_t;$/;"	t
+int8_t	include/stdint.h	/^typedef signed char int8_t;$/;"	t
+int8_t	include/type.h	/^typedef signed char int8_t;$/;"	t
+intmax_t	include/stdint.h	/^typedef int64_t intmax_t;$/;"	t
+intmax_t	include/type.h	/^typedef int64_t intmax_t;$/;"	t
+intptr_t	include/stdint.h	/^typedef int32_t intptr_t;$/;"	t
+intptr_t	include/type.h	/^typedef int32_t intptr_t;$/;"	t
+intr_common	arch/interrupt.c	/^void intr_common(struct intr_frame *iframe)$/;"	f
+intr_context	arch/interrupt.c	/^bool intr_context (void)$/;"	f
+intr_disable	arch/interrupt.c	/^enum intr_level intr_disable (void) $/;"	f
+intr_enable	arch/interrupt.c	/^enum intr_level intr_enable (void) $/;"	f
+intr_entry	arch/i386/intr-stubs.S	/^intr_entry:$/;"	l
+intr_exit	arch/i386/intr-stubs.S	/^intr_exit:$/;"	l
+intr_frame	include/interrupt.h	/^struct intr_frame$/;"	s
+intr_get_level	arch/interrupt.c	/^enum intr_level intr_get_level (void) $/;"	f
+intr_handler_func	include/interrupt.h	/^typedef void intr_handler_func (struct intr_frame *);$/;"	t
+intr_level	include/interrupt.h	/^enum intr_level$/;"	g
+intr_set_level	arch/interrupt.c	/^enum intr_level intr_set_level (enum intr_level level) $/;"	f
+intr_stub_func	arch/interrupt.c	/^typedef void intr_stub_func (void);$/;"	t	file:
+intr_stub_func	include/intr-stubs.h	/^typedef void intr_stub_func (void);$/;"	t
+intr_stubs	arch/i386/intr-stubs.S	/^intr_stubs:$/;"	l
+iowait	arch/i386/io.asm	/^iowait:$/;"	l
+isEmpty	device/kbd.c	/^bool isEmpty()$/;"	f
+isFull	device/kbd.c	/^bool isFull()$/;"	f
+is_digit	vsprintk.c	11;"	d	file:
+is_head	list.c	/^is_head (struct list_elem *elem)$/;"	f	file:
+is_interior	list.c	/^is_interior (struct list_elem *elem)$/;"	f	file:
+is_kernel_vaddr	include/vaddr.h	/^is_kernel_vaddr (const void *vaddr) $/;"	f
+is_sorted	list.c	/^is_sorted (struct list_elem *a, struct list_elem *b,$/;"	f	file:
+is_tail	list.c	/^is_tail (struct list_elem *elem)$/;"	f	file:
+is_user_vaddr	include/vaddr.h	/^is_user_vaddr (const void *vaddr) $/;"	f
+isalnum	include/ctype.h	/^static inline int isalnum (int c) { return isalpha (c) || isdigit (c); }$/;"	f
+isalpha	include/ctype.h	/^static inline int isalpha (int c) { return islower (c) || isupper (c); }$/;"	f
+isascii	include/ctype.h	/^static inline int isascii (int c) { return c >= 0 && c < 128; }$/;"	f
+isblank	include/ctype.h	/^static inline int isblank (int c) { return c == ' ' || c == '\\t'; }$/;"	f
+iscntrl	include/ctype.h	/^static inline int iscntrl (int c) { return (c >= 0 && c < 32) || c == 127; }$/;"	f
+isdigit	include/ctype.h	/^static inline int isdigit (int c) { return c >= '0' && c <= '9'; }$/;"	f
+isgraph	include/ctype.h	/^static inline int isgraph (int c) { return c > 32 && c < 127; }$/;"	f
+islower	include/ctype.h	/^static inline int islower (int c) { return c >= 'a' && c <= 'z'; }$/;"	f
+isprint	include/ctype.h	/^static inline int isprint (int c) { return c >= 32 && c < 127; }$/;"	f
+ispunct	include/ctype.h	/^static inline int ispunct (int c) {$/;"	f
+isspace	include/ctype.h	/^static inline int isspace (int c) {$/;"	f
+isupper	include/ctype.h	/^static inline int isupper (int c) { return c >= 'A' && c <= 'Z'; }$/;"	f
+isxdigit	include/ctype.h	/^static inline int isxdigit (int c) {$/;"	f
+kChStruct	include/device/console.h	/^typedef struct kChStruct$/;"	s
+kbd_buf	device/kbd.c	/^static char kbd_buf[BUFSIZ];$/;"	v	file:
+kbd_handler	device/kbd.c	/^void kbd_handler(struct intr_frame *iframe)$/;"	f
+kbd_read_char	device/kbd.c	/^char kbd_read_char()$/;"	f
+kernel10_proc	proc/proc.c	/^void kernel10_proc(void* aux)$/;"	f
+kernel1_proc	proc/proc.c	/^void kernel1_proc(void* aux)$/;"	f
+kernel2_proc	proc/proc.c	/^void kernel2_proc(void* aux)$/;"	f
+kernel3_proc	proc/proc.c	/^void kernel3_proc(void* aux)$/;"	f
+kernel4_proc	proc/proc.c	/^void kernel4_proc(void* aux)$/;"	f
+kernel5_proc	proc/proc.c	/^void kernel5_proc(void* aux)$/;"	f
+kernel6_proc	proc/proc.c	/^void kernel6_proc(void* aux)$/;"	f
+kernel7_proc	proc/proc.c	/^void kernel7_proc(void* aux)$/;"	f
+kernel8_proc	proc/proc.c	/^void kernel8_proc(void* aux)$/;"	f
+kernel9_proc	proc/proc.c	/^void kernel9_proc(void* aux)$/;"	f
+last_mask	bitmap.c	/^last_mask (const struct bitmap *b) $/;"	f	file:
+lately_pid	proc/proc.c	/^static int lately_pid; $/;"	v	file:
+latest	proc/sched.c	/^struct process *latest;$/;"	v	typeref:struct:process
+less_time_sleep	proc/proc.c	/^bool less_time_sleep(const struct list_elem *a, const struct list_elem *b,void *aux)$/;"	f
+level_que	proc/proc.c	/^struct list level_que[QUE_LV_MAX];$/;"	v	typeref:struct:list
+lib	Makefile	/^lib = .\/lib$/;"	m
+list	include/list.h	/^struct list $/;"	s
+list_back	list.c	/^list_back (struct list *list)$/;"	f
+list_begin	list.c	/^list_begin (struct list *list)$/;"	f
+list_elem	device/block.c	/^    struct list_elem list_elem;         \/* Element in all_blocks. *\/$/;"	m	struct:block	typeref:struct:block::list_elem	file:
+list_elem	include/list.h	/^struct list_elem $/;"	s
+list_elem_to_block	device/block.c	/^list_elem_to_block (struct list_elem *list_elem)$/;"	f	file:
+list_empty	list.c	/^list_empty (struct list *list)$/;"	f
+list_end	list.c	/^list_end (struct list *list)$/;"	f
+list_entry	include/list.h	107;"	d
+list_front	list.c	/^list_front (struct list *list)$/;"	f
+list_head	list.c	/^list_head (struct list *list) $/;"	f
+list_init	list.c	/^list_init (struct list *list)$/;"	f
+list_insert	list.c	/^list_insert (struct list_elem *before, struct list_elem *elem)$/;"	f
+list_insert_ordered	list.c	/^list_insert_ordered (struct list *list, struct list_elem *elem,$/;"	f
+list_less_func	include/list.h	/^typedef bool list_less_func (const struct list_elem *a,$/;"	t
+list_max	list.c	/^list_max (struct list *list, list_less_func *less, void *aux)$/;"	f
+list_min	list.c	/^list_min (struct list *list, list_less_func *less, void *aux)$/;"	f
+list_next	list.c	/^list_next (struct list_elem *elem)$/;"	f
+list_pop_back	list.c	/^list_pop_back (struct list *list)$/;"	f
+list_pop_front	list.c	/^list_pop_front (struct list *list)$/;"	f
+list_prev	list.c	/^list_prev (struct list_elem *elem)$/;"	f
+list_push_back	list.c	/^list_push_back (struct list *list, struct list_elem *elem)$/;"	f
+list_push_front	list.c	/^list_push_front (struct list *list, struct list_elem *elem)$/;"	f
+list_rbegin	list.c	/^list_rbegin (struct list *list) $/;"	f
+list_remove	list.c	/^list_remove (struct list_elem *elem)$/;"	f
+list_rend	list.c	/^list_rend (struct list *list) $/;"	f
+list_reverse	list.c	/^list_reverse (struct list *list)$/;"	f
+list_size	list.c	/^list_size (struct list *list)$/;"	f
+list_sort	list.c	/^list_sort (struct list *list, list_less_func *less, void *aux)$/;"	f
+list_splice	list.c	/^list_splice (struct list_elem *before,$/;"	f
+list_tail	list.c	/^list_tail (struct list *list) $/;"	f
+list_unique	list.c	/^list_unique (struct list *list, struct list *duplicates,$/;"	f
+lock	include/synch.h	/^struct lock $/;"	s
+lock	mem/malloc.c	/^    struct lock lock;           \/* Lock. *\/$/;"	m	struct:desc	typeref:struct:desc::lock	file:
+lock	mem/palloc.c	/^	struct lock lock;  $/;"	m	struct:pool	typeref:struct:pool::lock	file:
+lock_acquire	synch.c	/^void lock_acquire (struct lock *lock)$/;"	f
+lock_held_by_current_thread	synch.c	/^bool lock_held_by_current_thread (const struct lock *lock) $/;"	f
+lock_init	synch.c	/^void lock_init (struct lock *lock)$/;"	f
+lock_pid_simple	proc/proc.c	/^static int lock_pid_simple; $/;"	v	file:
+lock_release	synch.c	/^void lock_release (struct lock *lock) $/;"	f
+lock_try_acquire	synch.c	/^bool lock_try_acquire (struct lock *lock)$/;"	f
+magic	mem/malloc.c	/^    unsigned magic;             \/* Always set to ARENA_MAGIC. *\/$/;"	m	struct:arena	file:
+main_init	arch/Main.c	/^void main_init(void)$/;"	f
+main_init	build/Main.s	/^main_init:$/;"	l
+malloc	mem/malloc.c	/^malloc (size_t size) $/;"	f
+malloc_init	mem/malloc.c	/^malloc_init (void) $/;"	f
+mem	Makefile	/^mem = .\/mem$/;"	m
+mem_pool	mem/palloc.c	/^static struct pool mem_pool;$/;"	v	typeref:struct:pool	file:
+mem_size	mem/mm.c	/^unsigned long mem_size()$/;"	f
+member	include/proc/proc.h	/^	unsigned member;$/;"	m	struct:process
+memchr	string.c	/^memchr (const void *block_, int ch_, size_t size) $/;"	f
+memcmp	string.c	/^memcmp (const void *a_, const void *b_, size_t size) $/;"	f
+memcpy	string.c	/^memcpy (void *dst_, const void *src_, size_t size) $/;"	f
+memcpy_hard	mem/paging.c	/^void memcpy_hard(void* from, void* to, uint32_t len)$/;"	f
+memmove	string.c	/^memmove (void *dst_, const void *src_, size_t size) $/;"	f
+memset	string.c	/^memset (void *dst_, int value, size_t size) $/;"	f
+more_prio	proc/proc.c	/^bool more_prio(const struct list_elem *a, const struct list_elem *b,void *aux)$/;"	f
+nGetMemSize	mem/mm.c	/^unsigned long nGetMemSize()$/;"	f
+name	device/block.c	/^    char name[16];                      \/* Block device name. *\/$/;"	m	struct:block	file:
+next	include/list.h	/^    struct list_elem *next;     \/* Next list element. *\/$/;"	m	struct:list_elem	typeref:struct:list_elem::list_elem
+next_line	device/console.c	/^char next_line[2]; $/;"	v
+nice	include/proc/proc.h	/^	unsigned char nice;		$/;"	m	struct:process
+nice	include/proc/proc.h	/^	unsigned char nice; $/;"	m	struct:proc_option
+number	vsprintk.c	/^static char *number(char * str, int num, int base, int size, int precision, int type)$/;"	f	file:
+offsetof	include/ssulib.h	5;"	d
+offsetof	include/stddef.h	4;"	d
+old_proc	include/proc/proc.h	/^	bool old_proc;$/;"	m	struct:process
+ops	device/block.c	/^    const struct block_operations *ops;  \/* Driver operations. *\/$/;"	m	struct:block	typeref:struct:block::block_operations	file:
+outb	arch/i386/io.asm	/^outb:  $/;"	l
+outl	arch/i386/io.asm	/^outl:$/;"	l
+outsw	include/device/io.h	/^outsw (uint16_t port, const void *addr, size_t cnt)$/;"	f
+p_state	include/proc/proc.h	/^enum p_state {$/;"	g
+palloc_free_multiple	mem/palloc.c	/^void palloc_free_multiple (void *pages, size_t page_cnt) $/;"	f
+palloc_free_page	mem/palloc.c	/^void palloc_free_page (void *page) $/;"	f
+palloc_get_multiple	mem/palloc.c	/^uint32_t * palloc_get_multiple (size_t page_cnt)$/;"	f
+palloc_get_page	mem/palloc.c	/^uint32_t * palloc_get_page (void) $/;"	f
+parent	include/proc/proc.h	/^	struct process* parent;$/;"	m	struct:process	typeref:struct:process::process
+partition	device/partition.c	/^struct partition$/;"	s	file:
+partition_operations	device/partition.c	/^static struct block_operations partition_operations =$/;"	v	typeref:struct:block_operations	file:
+partition_operations	device/partition.c	/^static struct block_operations partition_operations;$/;"	v	typeref:struct:block_operations	file:
+partition_read	device/partition.c	/^partition_read (void *p_, block_sector_t sector, void *buffer)$/;"	f	file:
+partition_scan	device/partition.c	/^partition_scan (struct block *block)$/;"	f
+partition_type_name	device/partition.c	/^partition_type_name (uint8_t type)$/;"	f	file:
+partition_write	device/partition.c	/^partition_write (void *p_, block_sector_t sector, const void *buffer)$/;"	f	file:
+pd	include/proc/proc.h	/^	void *pd;	$/;"	m	struct:process
+pd_copy	mem/paging.c	/^void pd_copy(uint32_t* from, uint32_t* to, uint32_t* start, uint32_t* end, bool share)$/;"	f
+pd_create	mem/paging.c	/^uint32_t* pd_create (pid_t pid)$/;"	f
+pde_idx_addr	mem/paging.c	/^uint32_t pde_idx_addr(uint32_t* addr)$/;"	f
+pf_handler	mem/paging.c	/^intr_handler_func pf_handler;$/;"	v
+pf_handler	mem/paging.c	/^void pf_handler(struct intr_frame *iframe)$/;"	f
+pg_addr	mem/paging.c	/^uint32_t* pg_addr(uint32_t* addr)$/;"	f
+pg_no	include/mem/paging.h	/^static inline uint32_t pg_no(const uint32_t *page){$/;"	f
+pg_no	include/vaddr.h	/^static inline uintptr_t pg_no (const void *va) {$/;"	f
+pg_ofs	include/vaddr.h	/^static inline unsigned pg_ofs (const void *va) {$/;"	f
+pg_round_down	include/vaddr.h	/^static inline void *pg_round_down (const void *va) {$/;"	f
+pg_round_up	include/vaddr.h	/^static inline void *pg_round_up (const void *va) {$/;"	f
+pid	include/proc/proc.h	/^	pid_t pid;	$/;"	m	struct:process
+pid_num_max	proc/proc.c	/^int pid_num_max;$/;"	v
+pid_t	include/proc/proc.h	/^typedef int pid_t;$/;"	t
+plist	proc/proc.c	/^struct list plist;				$/;"	v	typeref:struct:list
+pool	mem/palloc.c	/^struct pool$/;"	s	file:
+prev	include/list.h	/^    struct list_elem *prev;     \/* Previous list element. *\/$/;"	m	struct:list_elem	typeref:struct:list_elem::list_elem
+printCharToSerial	device/console.c	/^void printCharToSerial(const char *pString)$/;"	f
+print_contributors	arch/Main.c	/^void print_contributors(void)$/;"	f
+print_contributors	build/Main.s	/^print_contributors:$/;"	l
+print_pid	include/proc/proc.h	/^proc_func print_pid;	$/;"	v
+printk	device/console.c	/^int printk(const char *fmt, ...)$/;"	f
+priority	include/proc/proc.h	/^	unsigned char priority;		$/;"	m	struct:process
+proc	Makefile	/^proc = .\/proc$/;"	m
+proc_block	proc/proc.c	/^void proc_block(void) \/\/io $/;"	f
+proc_create	proc/proc.c	/^pid_t proc_create(proc_func func, struct proc_option *opt, void* aux)$/;"	f
+proc_end	proc/proc.c	/^void proc_end(void)$/;"	f
+proc_free	proc/proc.c	/^void proc_free(void)$/;"	f
+proc_func	include/proc/proc.h	/^typedef void proc_func(void* aux);$/;"	t
+proc_option	include/proc/proc.h	/^struct proc_option$/;"	s
+proc_print_data	proc/proc.c	/^void proc_print_data()$/;"	f
+proc_que_leveldown	proc/sched.c	/^void proc_que_leveldown(struct process *cur)$/;"	f
+proc_que_levelup	proc/sched.c	/^void proc_que_levelup(struct process *cur)$/;"	f
+proc_sleep	proc/proc.c	/^void proc_sleep(unsigned ticks)$/;"	f
+proc_start	proc/proc.c	/^void  proc_start(void)$/;"	f
+proc_ticks	arch/interrupt.c	/^unsigned long proc_ticks;$/;"	v
+proc_unblock	proc/proc.c	/^void proc_unblock(struct process* proc)$/;"	f
+proc_wake	proc/proc.c	/^void proc_wake(void)$/;"	f
+process	include/proc/proc.h	/^struct process$/;"	s
+process_stack_ofs	proc/proc.c	/^uint32_t process_stack_ofs; $/;"	v
+procs	proc/proc.c	/^struct process procs[PROC_NUM_MAX]; $/;"	v	typeref:struct:process
+pt_addr	mem/paging.c	/^uint32_t* pt_addr(uint32_t* addr)$/;"	f
+pt_copy	mem/paging.c	/^uint32_t pt_copy(uint32_t *pd, uint32_t *dest_pd, uint32_t idx, uint32_t* start, uint32_t* end, bool share)$/;"	f
+pt_pde	mem/paging.c	/^uint32_t* pt_pde(uint32_t pde)$/;"	f
+pte_idx_addr	mem/paging.c	/^uint32_t pte_idx_addr(uint32_t* addr)$/;"	f
+ptov	include/vaddr.h	/^ptov (uintptr_t paddr)$/;"	f
+ptrdiff_t	include/stddef.h	/^typedef __PTRDIFF_TYPE__ ptrdiff_t;$/;"	t
+que_level	include/proc/proc.h	/^	int que_level; \/\/(0,1,2) queue level$/;"	m	struct:process
+qword	include/type.h	/^typedef long long qword;$/;"	t
+read	include/device/block.h	/^    void (*read) (void *aux, block_sector_t, void *buffer);$/;"	m	struct:block_operations
+read_cnt	device/block.c	/^    unsigned long long read_cnt;        \/* Number of sectors read. *\/$/;"	m	struct:block	file:
+read_cr0	arch/i386/crset.asm	/^read_cr0:$/;"	l
+read_cr3	arch/i386/crset.asm	/^read_cr3:$/;"	l
+read_partition_table	device/partition.c	/^read_partition_table (struct block *block, block_sector_t sector,$/;"	f	file:
+realloc	mem/malloc.c	/^realloc (void *old_block, size_t new_size) $/;"	f
+refreshScreen	device/console.c	/^void refreshScreen(void)$/;"	f
+reg_handler	arch/interrupt.c	/^void reg_handler(unsigned short idx, intr_handler_func *handler) $/;"	f
+rt_priority	include/proc/proc.h	/^	unsigned char rt_priority;	$/;"	m	struct:process
+rt_priority	include/proc/proc.h	/^	unsigned char rt_priority;$/;"	m	struct:proc_option
+scale_down	mem/paging.c	/^uint32_t scale_down(uint32_t base, uint32_t size)$/;"	f
+scale_up	mem/paging.c	/^uint32_t scale_up(uint32_t base, uint32_t size)$/;"	f
+sched_find_que	proc/sched.c	/^struct process* sched_find_que(void) {$/;"	f
+sched_on_return	arch/interrupt.c	/^bool sched_on_return;$/;"	v
+schedule	proc/sched.c	/^void schedule(void)$/;"	f
+scheduling	proc/sched.c	/^int scheduling;$/;"	v
+scr_end	device/console.c	/^char* scr_end;$/;"	v
+scroll	device/console.c	/^void scroll(void) $/;"	f
+scroll_screen	device/console.c	/^void scroll_screen(int offset)$/;"	f
+sema_down	synch.c	/^void sema_down (struct semaphore *sema) $/;"	f
+sema_init	synch.c	/^void sema_init(struct semaphore *sema, unsigned value)$/;"	f
+sema_self_test	synch.c	/^void sema_self_test (void) $/;"	f
+sema_test_helper	synch.c	/^static void sema_test_helper (void *sema_) $/;"	f	file:
+sema_try_down	synch.c	/^bool sema_try_down (struct semaphore *sema) $/;"	f
+sema_up	synch.c	/^void sema_up (struct semaphore *sema) $/;"	f
+semaphore	include/synch.h	/^      struct semaphore semaphore; $/;"	m	struct:lock	typeref:struct:lock::semaphore
+semaphore	include/synch.h	/^struct semaphore $/;"	s
+set_fallow	device/console.c	/^void set_fallow(void)$/;"	f
+shutdown	arch/syscall.c	/^void shutdown(void)$/;"	f
+simple_lock	include/proc/proc.h	/^	int simple_lock;	$/;"	m	struct:process
+size	device/block.c	/^    block_sector_t size;                 \/* Size in sectors. *\/$/;"	m	struct:block	file:
+size_t	include/stddef.h	/^typedef __SIZE_TYPE__ size_t;$/;"	t
+size_t	include/type.h	/^typedef unsigned size_t;$/;"	t
+skip_atoi	vsprintk.c	/^static int skip_atoi(const char **s)$/;"	f	file:
+slist	proc/proc.c	/^struct list slist;				$/;"	v	typeref:struct:list
+ss	include/interrupt.h	/^	uint16_t ss, :16; $/;"	m	struct:intr_frame
+ssuos_main	arch/Main.c	/^void ssuos_main(void)$/;"	f
+ssuos_main	build/Main.s	/^ssuos_main:$/;"	l
+ssuread	arch/syscall.c	/^int ssuread()$/;"	f
+stack	include/proc/proc.h	/^	void *stack;	$/;"	m	struct:process
+start	device/partition.c	/^    block_sector_t start;               \/* First sector within device. *\/$/;"	m	struct:partition	file:
+state	include/proc/proc.h	/^	enum p_state state;$/;"	m	struct:process	typeref:enum:process::p_state
+strcat	include/string.h	25;"	d
+strchr	string.c	/^strchr (const char *string, int c_) $/;"	f
+strcmp	string.c	/^strcmp (const char *a_, const char *b_) $/;"	f
+strcpy	include/string.h	23;"	d
+strcspn	string.c	/^strcspn (const char *string, const char *stop) $/;"	f
+strlcat	string.c	/^strlcat (char *dst, const char *src, size_t size) $/;"	f
+strlcpy	string.c	/^strlcpy (char *dst, const char *src, size_t size) $/;"	f
+strlen	vsprintk.c	/^int strlen(const char *string)$/;"	f
+strncat	include/string.h	26;"	d
+strncmp	ssulib.c	/^int strncmp(char* b1, char* b2, int len)$/;"	f
+strncpy	include/string.h	24;"	d
+strnlen	string.c	/^strnlen (const char *string, size_t maxlen) $/;"	f
+strpbrk	string.c	/^strpbrk (const char *string, const char *stop) $/;"	f
+strrchr	string.c	/^strrchr (const char *string, int c_) $/;"	f
+strspn	string.c	/^strspn (const char *string, const char *skip) $/;"	f
+strstr	string.c	/^strstr (const char *haystack, const char *needle) $/;"	f
+strtok	include/string.h	27;"	d
+strtok_r	string.c	/^strtok_r (char *s, const char *delimiters, char **save_ptr) $/;"	f
+swap	list.c	/^swap (struct list_elem **a, struct list_elem **b) $/;"	f	file:
+switch_process	arch/i386/switch.S	/^switch_process:$/;"	l
+syscall0	arch/syscall.c	6;"	d	file:
+syscall1	arch/syscall.c	18;"	d	file:
+syscall2	arch/syscall.c	32;"	d	file:
+syscall3	arch/syscall.c	48;"	d	file:
+syscall_handler	arch/interrupt.c	/^void syscall_handler(struct intr_frame *iframe)$/;"	f
+syscall_tbl	arch/syscall.c	/^int syscall_tbl[SYS_NUM][2];$/;"	v
+tail	include/list.h	/^    struct list_elem tail;      \/* List tail. *\/$/;"	m	struct:list	typeref:struct:list::list_elem
+ticks	arch/interrupt.c	/^static unsigned long ticks;$/;"	v	file:
+time_sleep	include/proc/proc.h	/^	unsigned long long time_sleep;$/;"	m	struct:process
+time_slice	include/proc/proc.h	/^	unsigned time_slice;	$/;"	m	struct:process
+time_used	include/proc/proc.h	/^	unsigned long long time_used;	$/;"	m	struct:process
+timer_handler	arch/interrupt.c	/^void timer_handler(struct intr_frame *iframe)$/;"	f
+tolower	include/ctype.h	/^static inline int tolower (int c) { return isupper (c) ? c - 'A' + 'a' : c; }$/;"	f
+toupper	include/ctype.h	/^static inline int toupper (int c) { return islower (c) ? c - 'a' + 'A' : c; }$/;"	f
+true	include/stdbool.h	5;"	d
+true	include/type.h	19;"	d
+type	device/block.c	/^    enum block_type type;                \/* Type of block device. *\/$/;"	m	struct:block	typeref:enum:block::block_type	file:
+uint16_t	include/stdint.h	/^typedef unsigned short int uint16_t;$/;"	t
+uint16_t	include/type.h	/^typedef unsigned short int uint16_t;$/;"	t
+uint32_t	include/stdint.h	/^typedef unsigned int uint32_t;$/;"	t
+uint32_t	include/type.h	/^typedef unsigned int uint32_t;$/;"	t
+uint64_t	include/stdint.h	/^typedef unsigned long long int uint64_t;$/;"	t
+uint64_t	include/type.h	/^typedef unsigned long long int uint64_t;$/;"	t
+uint8_t	include/stdint.h	/^typedef unsigned char uint8_t;$/;"	t
+uint8_t	include/type.h	/^typedef unsigned char uint8_t;$/;"	t
+uintmax_t	include/stdint.h	/^typedef unsigned long long int uintmax_t;$/;"	t
+uintmax_t	include/type.h	/^typedef unsigned long long int uintmax_t;$/;"	t
+uintptr_t	include/stdint.h	/^typedef uint32_t uintptr_t;$/;"	t
+uintptr_t	include/type.h	/^typedef uint32_t uintptr_t;$/;"	t
+used_map	mem/palloc.c	/^	struct bitmap *used_map; $/;"	m	struct:pool	typeref:struct:pool::bitmap	file:
+va_arg	include/stdarg.h	10;"	d
+va_end	include/stdarg.h	11;"	d
+va_list	include/stdarg.h	/^typedef char			*va_list;$/;"	t
+va_start	include/stdarg.h	9;"	d
+value	include/synch.h	/^      unsigned value;$/;"	m	struct:semaphore
+vec_no	include/interrupt.h	/^	uint32_t vec_no;$/;"	m	struct:intr_frame
+vsprintk	vsprintk.c	/^int vsprintk(char *buf, const char *fmt, va_list args)$/;"	f
+vtop	include/vaddr.h	/^vtop (const void *vaddr)$/;"	f
+wait	arch/syscall.c	/^pid_t wait(int *status)$/;"	f
+waiters	include/synch.h	/^      struct list waiters; $/;"	m	struct:condition	typeref:struct:condition::list
+waiters	include/synch.h	/^      struct list waiters;$/;"	m	struct:semaphore	typeref:struct:semaphore::list
+write	include/device/block.h	/^    void (*write) (void *aux, block_sector_t, const void *buffer);$/;"	m	struct:block_operations
+write_cnt	device/block.c	/^    unsigned long long write_cnt;       \/* Number of sectors written. *\/$/;"	m	struct:block	file:
+write_cr0	arch/i386/crset.asm	/^write_cr0:$/;"	l
+write_cr3	arch/i386/crset.asm	/^write_cr3:$/;"	l
+zero	arch/i386/intr-stubs.S	/^#define zero                                \\$/;"	d

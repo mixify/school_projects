@@ -1,0 +1,70 @@
+void lseek_proc(void *aux , void *filename)
+{
+
+	char buf[BUFSIZ] = {0};
+	int fd;
+	fd = open(filename, O_RDWR);
+	if (fd < 0 )return;
+	write(fd , "ssuos ",6);
+    /* original */
+    printk ("%d \n", lseek(fd, -3, SEEK_CUR, NULL));
+    write(fd, "world",5);
+    lseek(fd, 0, SEEK_SET,NULL);
+    read(fd , buf, 8);
+    printk("%s\n", buf);
+    lseek(fd, -9, SEEK_END, NULL);
+    read(fd, buf, 9);
+    printk("%s\n", buf);
+
+    //ssuworld 가 정확히 출력되어야 함
+    // 옵션에 대한 시나리오 및 검증할 코드 아래에 추가
+    // 각 옵션에 대해 파일 크기 및 내용이 정확하게 채워지는지 보여야 함
+
+    /*   option  */
+
+    //current file size == 8, position == 8, file = [ssuworld]
+
+    //'e' option (START)
+    printk("-----------e_option-------------\n");
+    printk("%d\n", lseek(fd ,5, SEEK_CUR,EXPAND_OPTION));//expand and lseek file 5 bytes, pos and file size both should be at 13
+    printk("file_size = %d\n", cur_process->file[fd]->inode->sn_size);
+	lseek(fd, 0, SEEK_SET,NULL);//go to first
+	read(fd , buf, 13);//read the whole file
+	printk("%s\n", buf);
+    /* 'e' option (END) */
+
+    //current file size == 13, position == 13, file = [ssuworld00000]
+
+    //'a' option (START)
+    printk("-----------a_option-------------\n");
+    lseek(fd , 3 , SEEK_SET,NULL);//set pos to 3 ssu<here>world00000
+    printk("%d\n",lseek(fd , 5 , SEEK_CUR,APPEND_OPTION));//append and lseek file 5bytes, pos will be 8, file size will be 18
+    printk("file_size = %d\n", cur_process->file[fd]->inode->sn_size);
+	lseek(fd, 0, SEEK_SET,NULL);//go to first
+	read(fd , buf, 18);//read the whole file
+	printk("%s\n", buf);
+    //'a' option (END)
+
+    //current file size == 18, position == 18, file = [ssu00000world00000]
+
+    //'re' option (START)
+    printk("-----------re_option-------------\n");
+    lseek(fd, 2, SEEK_SET, NULL);//set pos to 2 ss<here>u00000world00000
+    printk("%d\n",lseek(fd, -5, SEEK_CUR, REVERSE_OPTION));//expand 3 for reverse direction, pos will be 0, file size will be 21
+    printk("file_size = %d\n", cur_process->file[fd]->inode->sn_size);
+	read(fd , buf, 21);//read the whole file
+	printk("%s\n", buf);
+    //'re' option (END)
+
+    //current file size == 21, position == 21, file = [000ssu00000world00000]
+
+    //'c' option (START)
+    printk("-----------c_option-------------\n");
+    lseek(fd, -1, SEEK_END, NULL);//set pos to last-1 position 000ssu00000world0000<here>0
+    printk("%d\n",lseek(fd, 2, SEEK_CUR, CIRCULAR_OPTION));//pos will be at 0<here>00ssu00000world00000 == 1
+    printk("%d\n",lseek(fd, -2, SEEK_CUR, CIRCULAR_OPTION));//pos will be at 000ssu00000world0000<here>0 == 20
+    printk("%d\n",lseek(fd, -25, SEEK_CUR, CIRCULAR_OPTION));//pos will be at 000ssu00000world<here>00000 == 16
+    printk("%d\n",lseek(fd, 8, SEEK_CUR, CIRCULAR_OPTION));//pos will be at 000<here>ssu00000world00000 == 3
+    printk("%d\n",lseek(fd, -21, SEEK_CUR, CIRCULAR_OPTION));//pos will be at same position == 3
+    //'c' option (END)
+}
