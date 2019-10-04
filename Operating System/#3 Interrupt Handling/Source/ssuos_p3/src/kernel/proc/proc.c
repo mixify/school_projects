@@ -114,7 +114,8 @@ void init_proc()
     cur_process->pid = pid;
     cur_process->parent = NULL;
     cur_process->state = PROC_RUN;
-	cur_process->priority = 0;
+	cur_process->priority = 99;
+	/* cur_process->priority = 0; */
 	cur_process->stack = 0;
 	cur_process->pd = (void*)read_cr3();
 	cur_process->elem_all.prev = NULL;
